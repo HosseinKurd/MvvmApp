@@ -53,12 +53,13 @@ class AppModule {
         val interceptor = Interceptor { chain ->
             val original = chain.request()
             val builder = original.newBuilder()
-            /*builder.addHeader("Content-Type", "Application/json")
-            builder.addHeader("Accept", "Application/json")
+            builder.addHeader("Content-Type", "Application/json")
+            /*builder.addHeader("Accept", "Application/json")
             builder.addHeader("Username", "karfarma_test")
             builder.addHeader("Password", "12345678")*/
 
-            builder.header("Content-Type", "Application/json")
+            // builder.header("Content-Type", "Application/json")
+            // builder.header("Accept", "Application/json")
             builder.header("Username", "karfarma_test")
             builder.header("Password", "12345678")
             // builder.header("X-DEVELOPER", "KURDIA")
